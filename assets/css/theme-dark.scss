@@ -6,15 +6,14 @@ $bg-color: #252525;
 $bg-color2: #080808;
 
 .switch-box {
-    display: none;
     position: fixed;
-    bottom: 15px;
-    right: 120px;
+    bottom: 0px;
     z-index: 999;
-    // top:16px;
-    right: 10px;
+    // top: 23px;
+    display: none;
+    right: calc(100% - 98%);
     @media(max-width:991px){
-        right:65px;
+        right:88px;
         top:12px
     }
     .slider {
@@ -39,7 +38,7 @@ $bg-color2: #080808;
             margin: auto 0;
             transition: 0.4s;
             box-shadow: 0 0px 15px #2020203d;
-            background: white url('../img/shape/imgpsh_fullsize_anim.webp');
+            background: white url('../img/shape/imgpsh_fullsize_anim.webp'); 
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -94,7 +93,10 @@ $bg-color2: #080808;
         }
     }
     p {
-        color: $color-white; 
+        color: #ffff; 
+        @media (max-width: 320px) {
+            font-size: 16px;
+         }
     }
     body {
         // background: $dark-color;
@@ -148,7 +150,62 @@ $bg-color2: #080808;
         .footer-widget .footer-list li{
             color: #ffff;
         }
-        
+        .them-service-another-card {
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 30px 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            border-radius: 5px;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            // height: auto;
+            display: grid;
+            place-items: center;
+            @media only screen and (min-width:768px) and (max-width:991px){
+                height: auto;
+            }
+                &::before {
+                content: '';
+                position: absolute;
+                z-index: -2;
+                left: -50%;
+                top: -50%;
+                width: 200%;
+                height: 200%;
+                background-color: #399953;
+                background-repeat: no-repeat;
+                background-size: 50% 50%, 50% 50%;
+                background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+                background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+                animation: rotate 4s linear infinite;
+            }
+            
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                left: 6px;
+                top: 6px;
+                width: calc(100% - 12px);
+                height: calc(100% - 12px);
+                background: #252525;
+                border-radius: 5px;
+            }
+        }
+        .inner-header {
+            position: relative;
+            z-index: 9;
+            width: 50%;
+            margin: auto;
+            background-color: white;
+            text-align: center;
+            top: 20px;
+            color: #2966be;
+        }
     }
     .navbar-light {
         .navbar-brand {
@@ -357,9 +414,7 @@ $bg-color2: #080808;
             }
         }
     }
-    .service-another-card {
-        background-color: $bg-color;
-    }
+    
     .service-content-card {
         background-color: $bg-color;
     }
@@ -919,11 +974,11 @@ $bg-color2: #080808;
             p {
                 color: $color-white;
                 a {
-                    color: #fff;
-                    // border-bottom: 1px solid $main-color;
+                    color: $main-color;
+                    border-bottom: 1px solid $main-color;
                     &:hover {
-                        color: #fff;
-                        border-color: #fff;
+                        color: $color-blue;
+                        border-color: $color-blue;
                     }
                 }
             }
@@ -982,4 +1037,5 @@ $bg-color2: #080808;
         background-color: transparent;
     }
 }
+
 

@@ -7678,7 +7678,7 @@ area {
   right: 0;
   bottom: -4px;
   margin: auto;
-  background: white;
+  background: #243C78;
 }
 
 .animate-bg {
@@ -7802,13 +7802,14 @@ area {
 }
 
 .tammina-session {
-  background-image: url("../TAMS imgs/locode-&-why-tech-bg.svg");
+  background-image: url("../CEO/hero-bg-shape (4).svg");
   width: 100%;
-  height: 200vh;
+  height: 130vh;
   background-size: cover;
   display: grid;
   place-content: center;
-  padding: 50px 0px;
+  padding: 0px 0px;
+  background-position: center;
 }
 .tammina-session .tammina-session-reports {
   position: relative;
@@ -7833,6 +7834,8 @@ area {
   display: grid;
   text-align: center;
   align-items: center;
+  position: absolute;
+  bottom: 45px;
 }
 .tammina-session .design-card-support h2 {
   font-family: "Racing Sans One";
@@ -8131,13 +8134,19 @@ area {
 }
 
 .design-card-support {
-  height: auto;
+  height: 205px;
   animation: changeBackgroundColor 7s infinite;
   box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
   border-radius: 50px 20px;
   display: grid;
   text-align: center;
   align-items: center;
+  position: absolute;
+  bottom: 26px;
+  background: linear-gradient(96.21deg, #9E4EB3 22.34%, #EB5757 73.25%);
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
+  border-radius: 33px;
+  padding: 0px 60px !important;
 }
 .design-card-support h2 {
   font-family: "Racing Sans One";
@@ -8146,6 +8155,8 @@ area {
   font-weight: 400;
   font-size: 35px;
   line-height: 44px;
+  text-transform: capitalize;
+  text-align: left;
 }
 .design-card-support .Connect-content {
   display: grid;
@@ -8154,7 +8165,7 @@ area {
 .design-card-support .Connect-content .Connect-btn {
   border: 3px solid #FFFFFF;
   border-radius: 9px;
-  height: 50px;
+  height: 75px;
   width: 200px;
   background-color: transparent;
   font-weight: 400;
@@ -8162,7 +8173,7 @@ area {
   line-height: 45px;
   text-transform: capitalize;
   color: #FFFFFF;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 @keyframes changeBackgroundColor {
   0% {
@@ -8397,4 +8408,8 @@ area {
 
 .round-img {
   max-width: 450px;
+}
+
+.postion-relative {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

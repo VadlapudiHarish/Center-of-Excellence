@@ -8381,7 +8381,7 @@ area {
 }
 
 .first-section {
-    background-image: url('/assets/CEO/hero-bg-shape.svg');
+    background-image: url('../CEO/hero-bg-shape.svg');
     width: 100%;
     height: 120vh;
     background-size: cover;
@@ -8528,16 +8528,25 @@ area {
 }
 
 .methodology {
-    background-image: url('../TAMS\ imgs/methodology-bg-shape.svg');
+    background-image: url('../img/hero-bg-shape\ \(2\).svg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 164vh;
+    height: 104vh;
     width: 100%;
     display: grid;
     place-content: center;
+    &::before{
+        content: "";
+        background-image: url(../img/frame-1.svg);
+        position: absolute;
+        left: 46rem;
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+    }
 
-    @media(max-width:991px) {
-        height: 250vh;
+    @media(max-width:1199px) {
+        height: 240vh;
     }
 
     .methodology-session-text {
@@ -8572,12 +8581,27 @@ area {
 
     .First-text {
         border-style: dotted;
-        border-color: yellow;
+        border-color: #ffffff;
         border-radius: 3rem;
         padding: 2rem;
         margin: 3rem 0 3rem 0;
         width: 100%;
         position: relative;
+        min-height: 250px;
+        &::before{
+            content: "";
+            background-image: url(../img/Frame.svg);
+            position: absolute;
+            bottom: -26rem;
+            left: 46rem;
+            width: 200px;
+            height: 200px;
+            background-repeat: no-repeat;
+            @media (max-width:1199px){
+                bottom: -63rem;
+                left: 38rem;
+            }
+        }
 
         @media(max-width:575px) {
             width: 100%;
@@ -8605,21 +8629,22 @@ area {
             top: -12px;
             left: 0;
             right: 0;
-            background-color: #1c847f;
+            background: radial-gradient(65.96% 140.73% at -1.79% 1.55%, #B105DC 0%, #005647 100%);
             width: 70%;
             margin: auto;
-            color: #FFC700;
+            color: #ffffff;
             font-size: 18px;
         }
     }
 
     .second-text {
         border-style: dotted;
-        border-color: yellow;
+        border-color: #ffffff;
         border-radius: 3rem;
         padding: 2rem;
         width: 100%;
         position: relative;
+        min-height: 250px;
 
         @media(max-width:575px) {
             width: 100%;
@@ -8649,10 +8674,10 @@ area {
         top: -32px;
         left: 0;
         right: 0;
-        background-color: #1c847f;
+        background: radial-gradient(65.96% 140.73% at -1.79% 1.55%, #B105DC 0%, #005647 100%);
         width: 70%;
         margin: auto;
-        color: #FFC700;
+        color: #ffffff;
         font-size: 18px;
         position: relative;
 
@@ -8663,7 +8688,7 @@ area {
             height: 0;
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
-            border-bottom: 20px solid #FFC700;
+            border-bottom: 20px solid;
             transform: rotate(-90deg);
             right: 0;
         }
@@ -8675,7 +8700,7 @@ area {
             height: 0;
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
-            border-bottom: 20px solid #FFC700;
+            border-bottom: 20px solid;
             transform: rotate(90deg);
             left: 0;
         }

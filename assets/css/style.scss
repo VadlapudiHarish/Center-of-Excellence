@@ -8531,10 +8531,11 @@ area {
     background-image: url('../img/hero-bg-shape\ \(2\).svg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 104vh;
+    height: 120vh;
     width: 100%;
     display: grid;
     place-content: center;
+    background-position-y: bottom;
     &::before{
         content: "";
         background-image: url(../img/frame-1.svg);
@@ -8592,10 +8593,10 @@ area {
             content: "";
             background-image: url(../img/Frame.svg);
             position: absolute;
-            bottom: -26rem;
+            bottom: -20rem;
             left: 46rem;
-            width: 200px;
-            height: 200px;
+            width: 190px;
+            height: 190px;
             background-repeat: no-repeat;
             @media (max-width:1199px){
                 bottom: -63rem;
@@ -9496,44 +9497,45 @@ area {
     object-fit: contain;
 }
 
+.tammina-session-reports {
+    position: relative;
+    top: 34rem;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        background-image: url('../TAMS\ imgs/Vector-squre.svg');
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        right: 30px;
+        top: -83px;
+        animation: rotating 7s linear infinite;
+
+    }
+}
+
 .tammina-session {
     background-image: url('../CEO/hero-bg-shape\ \(4\).svg');
     width: 100%;
-    height: 130vh;
+    height: 180vh;
     background-size: cover;
     display: grid;
     place-content: center;
     padding: 0px 0px;
     background-position: center;
-
-    .tammina-session-reports {
-        position: relative;
-
-        &::after {
-            content: '';
-            background-image: url('../TAMS\ imgs/Vector-squre.svg');
-            position: absolute;
-            background-repeat: no-repeat;
-            width: 100px;
-            height: 100px;
-            background-size: contain;
-            right: 0;
-            top: -83px;
-            animation: rotating 7s linear infinite;
-
-        }
-    }
+    position: relative;
 
     .design-card-support {
-        height: 150px;
+        height: auto;
         background: linear-gradient(96.21deg, #247378 22.34%, #782470 73.25%);
         box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
         border-radius: 33px;
         display: grid;
         text-align: center;
         align-items: center;
-        position: absolute;
-        bottom: 45px;
 
         h2 {
             font-family: 'Racing Sans One';
@@ -9878,19 +9880,19 @@ border-radius: 15px;
 }
 
 .design-card-support {
-    height: 205px;
+    height: auto;
     animation: changeBackgroundColor 7s infinite;
     box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
     border-radius: 50px 20px;
     display: grid;
     text-align: center;
     align-items: center;
-    position: absolute;
-    bottom: 26px;
     background: linear-gradient(96.21deg, #9E4EB3 22.34%, #EB5757 73.25%);
 box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
 border-radius: 33px;
 padding: 0px 60px !important;
+position: relative;
+bottom: 22rem;
 
     h2 {
         font-family: 'Racing Sans One';
@@ -10148,7 +10150,7 @@ top: 10px;
 
 .service-line{
     background-image: url('/assets/CEO/hero-bg-shape\ \(1\).svg');
-    height: 150vh;
+    height: 200vh;
     display: grid;
     place-items: center;
     background-repeat: no-repeat;
@@ -10170,4 +10172,32 @@ color: #FFFFFF;
 
 .postion-relative{
     position: relative;
+}
+.horse{
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+.horse-img{
+    &::before {
+        content: '';
+        background-image: url(../img/cube-blue.svg);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 36rem;
+        z-index: 1;
+        right: 0;
+    }
+}
+.icon-1{
+    position: absolute;
+    bottom: 34%;
+    left: 12%;
+    @media (max-width:767px){
+        bottom: 9%;
+    }
+}
+.rectangle-11{
+    height: 87px;
 }

@@ -8445,7 +8445,7 @@ area {
 }
 
 .service-line {
-  background-image: url("/assets/CEO/hero-bg-shape (1).svg");
+  background-image: url("../img/hero-bg-shape (1).svg");
   height: 200vh;
   display: grid;
   place-items: center;

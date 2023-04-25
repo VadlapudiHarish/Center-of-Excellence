@@ -8531,11 +8531,13 @@ area {
     background-image: url('../img/hero-bg-shape\ \(2\).svg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 130vh;
     width: 100%;
     display: grid;
     place-content: center;
     background-position-y: bottom;
+    position: relative;
+    top: 27rem;
     &::before{
         content: "";
         background-image: url(../img/frame-1.svg);
@@ -8544,6 +8546,21 @@ area {
         width: 200px;
         height: 200px;
         background-repeat: no-repeat;
+        animation: linear infinite alternate;
+        animation-name: run;
+        animation-duration: 7s;
+        @keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    right: 0;
+  }
+  100% {
+    left: 0;
+    transform: scaleX(-1);
+  }
+       }
     }
 
     @media(max-width:1199px) {
@@ -8584,11 +8601,11 @@ area {
         border-style: dotted;
         border-color: #ffffff;
         border-radius: 3rem;
-        padding: 2rem;
+        padding: 4rem 2rem;
         margin: 3rem 0 3rem 0;
         width: 100%;
         position: relative;
-        min-height: 250px;
+        min-height: 330px;
         &::before{
             content: "";
             background-image: url(../img/Frame.svg);
@@ -8602,6 +8619,15 @@ area {
                 bottom: -63rem;
                 left: 38rem;
             }
+            animation: MoveUpDown 10s linear infinite;
+            @keyframes MoveUpDown {
+             0%, 100% {
+            left: 0;
+           }
+           50% {
+           left: 600px;
+           }
+           }
         }
 
         @media(max-width:575px) {
@@ -8645,7 +8671,7 @@ area {
         padding: 2rem;
         width: 100%;
         position: relative;
-        min-height: 250px;
+        min-height: 330px;
 
         @media(max-width:575px) {
             width: 100%;
@@ -10176,7 +10202,12 @@ color: #FFFFFF;
 .horse{
     position: absolute;
     right: 0;
-    top: 60px;
+    height: 245px;
+    @media (max-width:1199px){
+        top: 154px;
+        right: 15px;
+    }
+    top: 180px;
 }
 .horse-img{
     &::before {
@@ -10185,9 +10216,10 @@ color: #FFFFFF;
         width: 200px;
         height: 200px;
         position: absolute;
-        top: 36rem;
+        top: 38rem;
         z-index: 1;
         right: 0;
+        animation: rotated360 9s infinite linear;
     }
 }
 .icon-1{

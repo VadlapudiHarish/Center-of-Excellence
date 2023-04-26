@@ -8469,6 +8469,7 @@ area {
 }
 .d-gap {
   gap: 10px;
+  min-height: 200px;
 }
 
 .service-line {
@@ -8526,6 +8527,18 @@ area {
   right: 0;
   animation: rotated360 9s infinite linear;
 }
+.horse-img::after {
+  content: "";
+  background-image: url(../img/Home-3D-Cube.svg);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  animation: rotated360 9s infinite linear;
+  background-repeat: no-repeat;
+}
 
 .icon-1 {
   position: absolute;
@@ -8550,5 +8563,30 @@ area {
 @media (max-width: 767px) {
   .robo {
     top: 30px;
+  }
+}
+
+.Heading {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  bottom: 55px;
+  right: 74px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Heading {
+    bottom: 0;
+    top: 34px;
+    font-size: 18px;
+    right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .Heading {
+    top: 45px;
+    font-size: 10px;
+    left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

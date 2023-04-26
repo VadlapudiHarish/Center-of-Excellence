@@ -8387,6 +8387,9 @@ area {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    @media (max-width:767px){
+        height: 203vh;
+    }
     .first-section-content {
         height: 100%;
         align-items: center;
@@ -8401,8 +8404,9 @@ area {
             font-size: 50px;
             line-height: 1.2;
             font-weight: 700;
-            @media(max-width:320px) {
-                font-size: 38px;
+            @media(max-width:767px) {
+                font-size: 30px;
+                text-align: center;
             }
         }
 
@@ -8419,6 +8423,10 @@ area {
             padding: 0px 0px;
             font-style: italic;
             margin: 20px 0px;
+            @media (max-width:767px){
+                font-size: 15px;
+                text-align: center;
+            }
         }
 
         .Connect-btn {
@@ -8434,6 +8442,9 @@ area {
             position: relative;
             a {
                 color: white;
+            }
+            @media (max-width:767px){
+                left: 25%;
             }
         }
 
@@ -8566,7 +8577,9 @@ area {
     @media(max-width:1199px) {
         height: 240vh;
     }
-
+    @media(max-width:767px){
+        height: 320vh;
+    }
     .methodology-session-text {
         font-weight: 500;
         font-size: 30px;
@@ -9162,7 +9175,7 @@ area {
     opacity: 0;
     background: #F5F5F5;
     border-radius: 22px;
-    height: 200px;
+    min-height: 200px;
     padding: 0px 30px !important;
     p{
         text-align: justify;
@@ -9547,6 +9560,9 @@ area {
     background-image: url('../CEO/hero-bg-shape\ \(4\).svg');
     width: 100%;
     height: 180vh;
+    @media (max-width:767px){
+        height: 340vh;
+    }
     background-size: cover;
     display: grid;
     place-content: center;
@@ -10183,6 +10199,9 @@ top: 10px;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
+    @media (max-width:767px){
+        height: 413vh;
+    }
 
 }
 .Text{
@@ -10228,8 +10247,16 @@ color: #FFFFFF;
     left: 12%;
     @media (max-width:767px){
         bottom: 9%;
+        top: 43%;
     }
 }
 .rectangle-11{
     height: 87px;
+}
+.robo{
+    position: relative; 
+    top: 78px;
+    @media (max-width:767px){
+        top: 30px;
+    }
 }

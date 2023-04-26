@@ -6876,6 +6876,11 @@ area {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+@media (max-width: 767px) {
+  .first-section {
+    height: 203vh;
+  }
+}
 .first-section .first-section-content {
   height: 100%;
   align-items: center;
@@ -6892,9 +6897,10 @@ area {
   line-height: 1.2;
   font-weight: 700;
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .first-section .first-section-content h2 {
-    font-size: 38px;
+    font-size: 30px;
+    text-align: center;
   }
 }
 .first-section .first-section-content .laptop-view {
@@ -6907,6 +6913,12 @@ area {
   padding: 0px 0px;
   font-style: italic;
   margin: 20px 0px;
+}
+@media (max-width: 767px) {
+  .first-section .first-section-image .first-section_content {
+    font-size: 15px;
+    text-align: center;
+  }
 }
 .first-section .first-section-image .Connect-btn {
   border: 3px solid #FFFFFF;
@@ -6922,6 +6934,11 @@ area {
 }
 .first-section .first-section-image .Connect-btn a {
   color: white;
+}
+@media (max-width: 767px) {
+  .first-section .first-section-image .Connect-btn {
+    left: 25%;
+  }
 }
 .first-section .gare-circle-low {
   position: absolute;
@@ -7027,6 +7044,11 @@ area {
 @media (max-width: 1199px) {
   .methodology {
     height: 240vh;
+  }
+}
+@media (max-width: 767px) {
+  .methodology {
+    height: 320vh;
   }
 }
 .methodology .methodology-session-text {
@@ -7528,7 +7550,7 @@ area {
   opacity: 0;
   background: #F5F5F5;
   border-radius: 22px;
-  height: 200px;
+  min-height: 200px;
   padding: 0px 30px !important;
 }
 .card-align p {
@@ -7883,6 +7905,11 @@ area {
   padding: 0px 0px;
   background-position: center;
   position: relative;
+}
+@media (max-width: 767px) {
+  .tammina-session {
+    height: 340vh;
+  }
 }
 .tammina-session .design-card-support {
   height: auto;
@@ -8454,6 +8481,11 @@ area {
   background-position-y: bottom;
   background-position-x: center;
 }
+@media (max-width: 767px) {
+  .service-line {
+    height: 413vh;
+  }
+}
 
 .Text {
   font-weight: 400;
@@ -8503,9 +8535,20 @@ area {
 @media (max-width: 767px) {
   .icon-1 {
     bottom: 9%;
+    top: 43%;
   }
 }
 
 .rectangle-11 {
   height: 87px;
+}
+
+.robo {
+  position: relative;
+  top: 78px;
+}
+@media (max-width: 767px) {
+  .robo {
+    top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

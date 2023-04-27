@@ -15,7 +15,7 @@
 	position: absolute;
 	right: 0;
 	cursor: pointer;
-	color: #ff3900;
+	color: #ff3900 !important;
 	text-decoration: none;
 	font-size: 16px;
 	text-indent: -9999em;
@@ -58,7 +58,7 @@
 	padding: 1em 5%;
 	margin: 0;
 	text-align: left;
-	color: #677294;
+	color: #677294 !important;
 	border-top: 1px solid #DBEEFD;
 	text-decoration: none;
 }
@@ -193,7 +193,7 @@
     position: absolute;
     top: 120%;
     left: 2px;
-    width: 280px;
+    width: 320px;
     z-index: 99;
     display: block;
     padding-top: 0px;

@@ -8579,6 +8579,8 @@ area {
     }
     @media(max-width:767px){
         height: 320vh;
+        animation: none;
+        left: 0;
     }
     .methodology-session-text {
         font-weight: 500;
@@ -8630,7 +8632,10 @@ area {
             background-repeat: no-repeat;
             @media (max-width:1199px){
                 bottom: -63rem;
-                left: 38rem;
+                left: 0;
+            }
+            @media (max-width:767px){
+                bottom: -86rem;
             }
             animation: MoveUpDown 10s linear infinite;
             @keyframes MoveUpDown {
@@ -8638,7 +8643,7 @@ area {
             left: 0;
            }
            50% {
-           left: 600px;
+           left: 50px;
            }
            }
         }
@@ -8669,7 +8674,7 @@ area {
             top: -12px;
             left: 0;
             right: 0;
-            background: radial-gradient(65.96% 140.73% at -1.79% 1.55%, #B105DC 0%, #005647 100%);
+            background: #005647;
             width: 70%;
             margin: auto;
             color: #ffffff;
@@ -8714,7 +8719,7 @@ area {
         top: -32px;
         left: 0;
         right: 0;
-        background: radial-gradient(65.96% 140.73% at -1.79% 1.55%, #B105DC 0%, #005647 100%);
+        background:  #B105DC;
         width: 70%;
         margin: auto;
         color: #ffffff;
@@ -9184,6 +9189,7 @@ area {
 
 .card-align.active {
     opacity: 1;
+    background-color: #1E5FAB;
 }
 
 .card-align-left {
@@ -9195,7 +9201,7 @@ area {
     // margin-right: 3rem;
     margin-left: auto;
 
-    @media(min-width: 992px) {
+    @media(min-width: 1200px) {
         position: relative;
         left: 22px;
     }
@@ -9552,6 +9558,9 @@ area {
         right: 30px;
         top: -83px;
         animation: rotating 7s linear infinite;
+        @media (max-width:767px){
+            left: 0;
+        }
 
     }
 }
@@ -10201,7 +10210,24 @@ top: 10px;
     background-position-y: bottom;
     background-position-x: center;
     @media (max-width:767px){
-        height: 413vh;
+        height: 470vh;
+    }
+    &::after{
+        content: '';
+        background-image: url(../img/Home-3D-Cube.svg);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        z-index: 1;
+        margin-top: 101rem;
+        @media(max-width:767px){
+            margin-top: 230rem;
+        }
+        animation: rotated360 9s infinite linear;
+        background-repeat: no-repeat;
+    }
+    @media (min-width:768px) and (max-width:1199px){
+        height: 320vh;
     }
 
 }
@@ -10214,6 +10240,9 @@ color: #FFFFFF;
 
 .round-img{
     max-width: 450px;
+    @media (max-width:767px) {
+        max-width: 250px;
+    }
 }
 
 .postion-relative{
@@ -10240,6 +10269,10 @@ color: #FFFFFF;
         z-index: 1;
         right: 0;
         animation: rotated360 9s infinite linear;
+        @media (max-width:767px){
+            animation: none;
+            left: 0;
+        }
     }
     &::after{
         content: '';
@@ -10277,20 +10310,8 @@ color: #FFFFFF;
     font-size: 35px;
     color: #ffffff;
     font-weight: 700;
-    position: relative;
     display: flex;
-    bottom: 55px;
-    right: 74px;
-    @media (min-width:768px) and (max-width:991px) {
-        bottom: 0;
-        top: 34px;
-        font-size: 18px;
-        right: 0;
-        
-    }
-    @media (max-width:767px){
-        top: 45px;
-        font-size: 10px;
-        left: 0;
-    }
+    text-align: center;
+    position: relative;
+    bottom: 10rem;
 }

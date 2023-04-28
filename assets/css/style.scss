@@ -9793,6 +9793,7 @@ border-radius: 15px;
     @media(max-width:991px) {
         margin: auto;
         text-align: center;
+        padding: 0px 15px;
     }
 }
 
@@ -10215,13 +10216,13 @@ top: 10px;
     &::after{
         content: '';
         background-image: url(../img/Home-3D-Cube.svg);
-        width: 200px;
-        height: 200px;
+        width: 110px;
+        height: 110px;
         position: absolute;
         z-index: 1;
         margin-top: 101rem;
         @media(max-width:767px){
-            margin-top: 230rem;
+            display: none !important;
         }
         animation: rotated360 9s infinite linear;
         background-repeat: no-repeat;
@@ -10277,15 +10278,18 @@ color: #FFFFFF;
     &::after{
         content: '';
         background-image: url(../img/Home-3D-Cube.svg);
-        width: 200px;
-        height: 200px;
+        width: 110px;
+        height: 110px;
         position: absolute;
         top: 0;
         z-index: 1;
         left: 0;
         animation: rotated360 9s infinite linear;
         background-repeat: no-repeat;
-    }
+        @media (max-width:767px){
+            display: none;
+        }
+        }
     }
 .icon-1{
     position: absolute;

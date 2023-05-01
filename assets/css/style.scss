@@ -467,7 +467,7 @@ Navbar Area
                         }
 
                         a {
-                            text-transform: capitalize;
+                            text-transform: initial !important;
                             color: #202020 !important;
                             position: relative;
                             transition: 0.7s;
@@ -7045,7 +7045,7 @@ Footer Area
                 cursor: pointer;
                 &:hover {
                     color: $main-color !important;
-                    letter-spacing: 0.15px;
+                    // letter-spacing: 0.15px;
                 }
             }
         }
@@ -9793,7 +9793,7 @@ border-radius: 15px;
     @media(max-width:991px) {
         margin: auto;
         text-align: center;
-        padding: 0px 15px;
+        padding: 0px 20px;
     }
 }
 

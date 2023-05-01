@@ -443,7 +443,7 @@ Navbar Area
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
-  text-transform: capitalize;
+  text-transform: initial !important;
   color: #202020 !important;
   position: relative;
   -webkit-transition: 0.7s;
@@ -9949,7 +9949,7 @@ area {
   .key-text {
     margin: auto;
     text-align: center;
-    padding: 0px 15px;
+    padding: 0px 20px;
   }
 }
 
